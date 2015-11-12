@@ -4,3 +4,5 @@ pytest
 mock
 bumpversion
 webtest
+coverage
+pytest-cov

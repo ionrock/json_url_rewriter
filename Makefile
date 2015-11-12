@@ -52,10 +52,7 @@ test-all:
 	tox
 
 coverage:
-	coverage run --source json_url_rewriter setup.py test
-	coverage report -m
-	coverage html
-	open htmlcov/index.html
+	$(VENV)/bin/py.test --cov-report term --cov=json_url_rewriter
 
 docs:
 	rm -f docs/json_url_rewriter.rst

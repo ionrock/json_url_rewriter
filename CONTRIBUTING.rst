@@ -62,11 +62,10 @@ Ready to contribute? Here's how to set up `json_url_rewriter` for local developm
 
     $ git clone git@github.com:your_name_here/json_url_rewriter.git
 
-3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+3. Install your local copy into a virtualenv use the Makefile. ::
 
-    $ mkvirtualenv json_url_rewriter
     $ cd json_url_rewriter/
-    $ python setup.py develop
+    $ make bootstrap
 
 4. Create a branch for local development::
 
@@ -76,11 +75,7 @@ Ready to contribute? Here's how to set up `json_url_rewriter` for local developm
 
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
 
-    $ flake8 json_url_rewriter tests
-    $ python setup.py test
-    $ tox
-
-   To get flake8 and tox, just pip install them into your virtualenv.
+    $ make test-all
 
 6. Commit your changes and push your branch to GitHub::
 
@@ -108,4 +103,4 @@ Tips
 
 To run a subset of tests::
 
-    $ python -m unittest tests.test_json_url_rewriter
+    $ py.test tests/test_json_url_rewriter.py::TestClassName::test_func

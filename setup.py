@@ -16,7 +16,7 @@ requirements = [
 
 setup(
     name='json_url_rewriter',
-    version='0.1.0',
+    version='0.1.1',
     description='Helpers for rewriting links in JSON.',
     long_description=readme,
     author='Eric Larson',

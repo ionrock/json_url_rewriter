@@ -81,3 +81,8 @@ class RewriteMiddleware(object):
             return [self.rewrite(resp, environ)]
 
         return resp
+
+
+def json_url_rewriter_filter_factory(global_conf, *args, **kw):
+    print(global_conf, args, kw)
+    raise Exception('Blastoff')

@@ -14,7 +14,7 @@ WSGI Middleware helpers for rewriting links in JSON.
 * Free software: BSD license
 * Documentation: https://json_url_rewriter.readthedocs.org.
 
-Features
---------
+TODO
+----
 
-* TODO
+* Add paste filter factory support
